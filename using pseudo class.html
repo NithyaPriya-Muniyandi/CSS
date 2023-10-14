@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+</head>
+<style>
+    body{
+        background-image: url('project bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-attachment: fixed;
+     
+      
+    }
+    h1{
+        text-align: center;
+        color:rgb(129, 255, 129);
+    }
+    h1:hover{
+        color: aqua;
+    }
+    h1:visited{
+        color: blueviolet;
+    }
+
+.gri{
+    display: grid;
+    margin-left: 5%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,400px);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+    img{
+        height: 200px;
+        width: 200px;
+        background-color: antiquewhite;
+        margin-top: 20%;
+    }
+    img:hover{
+        transform: scale(2,2);
+        transition: 2s;
+    }
+    .web,.chat,.game,.text,.java{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 200px;
+        width: 200px;
+        background-color: wheat;
+        text-align: center;
+        display: grid;
+       
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+     
+    }
+    .chat,.java{
+        background-color: blue;
+    }
+
+    .game{
+        color: yellow;
+    }
+
+    .data{
+        text-align: center;
+        display: grid;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 200px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+   
+    .web:hover,.chat:hover,.game:hover,.text:hover,.java:hover,.data:hover{
+        transform: scale(2,2);
+        transition: 2s;
+        color: rgb(151, 151, 234);
+    }
+</style>
+<body>
+    <h1>Projects</h1>
+    <div class="gri">
+        <img src="robot.jpg" alt="robot">
+        <p class="web">WEB DESIGN</p>
+        <p class="chat">CHAT BOTS</p>
+        <p class="game">GAME DESIGN</p>
+        <p class="text">TEXT ANALYSIS</p>
+        <p class="java">JAVA SCRIPT</p>
+        <p class="data">DATA PRIVACY</p>
+        <img src="robot.jpg" alt="robot">
+    </div>
+</body>
+</html>

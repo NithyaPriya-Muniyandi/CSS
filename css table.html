@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS table</title>
+    <style>
+
+        div{
+            background-color: #30a0a0;
+            width: 700px;
+            height: 400px;
+            margin: 20px;
+        }
+        table {
+  border-collapse: collapse;   
+  width: 80%; 
+  margin: 50px;
+
+
+
+}
+
+th, td {
+  border: 1px solid #2f426b; 
+  padding: 8px; 
+}
+
+table {
+  background-color: #99b3b3; 
+}
+
+th {
+  background-color: #00064b; 
+  color: #fff; 
+}
+
+
+th, td {
+  width: 25%; 
+}
+tr:hover {
+  background-color: #e0e0e0; 
+}
+tr:nth-child(even) {
+  background-color: #2f426b;
+  color: white; 
+}
+
+tr:nth-child(odd) {
+  background-color: #362b62;
+  color: white; 
+}
+th, td {
+  text-align: center; 
+  font-weight: bold; 
+}
+thead {
+  background-color: #333;
+  color: #fff;
+}
+.s{
+    color: white;
+    background-color: #30a0a0;
+    padding: 5px;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <table>
+        <tr>
+            <th>Provider Name</th>
+            <th>E-Mail</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Lacob Geaorgescu</td>
+            <td>e-mail@test-email.com</td>
+            <td><input class="s" type="submit" value="Select"></td>
+        </tr>
+
+        <tr>
+            <td>Julius Neumann</td>
+            <td>e-mail@test-email.com</td>
+            <td><input class="s" type="submit" value="Select"></td>
+        </tr>
+
+        <tr>
+            <td>Christoph Koller</td>
+            <td>e-mail@test-email.com</td>
+            <td><input class="s" type="submit" value="Select"></td>
+        </tr>
+
+        <tr>
+            <td>Bramr</td>
+            <td>e-mail@test-email.com</td>
+            <td><input class="s" type="submit" value="Select"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Year:2014</td>
+        </tr>
+        
+    </table>
+</div>
+</body>
+</html>
